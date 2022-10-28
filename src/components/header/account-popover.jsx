@@ -24,7 +24,6 @@ const AccountPopover = () => {
       to: "/account/order-history",
     },
   ]
-  console.log(customerName, 'name');
   return (
     <Fragment>
       <Menu as="div" className="relative inline-block text-left">

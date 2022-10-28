@@ -4,7 +4,7 @@ import Layout from "./src/components/layout"
 import { MedusaProvider } from "./src/context/medusa-context"
 
 const BASE_URL =
-  process.env.GATSBY_MEDUSA_BACKEND_URL || "http://localhost:9000"
+  process.env.GATSBY_MEDUSA_BACKEND_URL 
 
 const medusaClient = new Medusa({ baseUrl: BASE_URL })
 

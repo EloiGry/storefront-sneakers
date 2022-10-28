@@ -46,7 +46,7 @@ module.exports = {
       resolve: `gatsby-source-medusa`,
       options: {
         storeUrl:
-          process.env.GATSBY_MEDUSA_BACKEND_URL,
+          process.env.GATSBY_MEDUSA_BACKEND_URL || `http://localhost:9000`,
       },
     },
   ],

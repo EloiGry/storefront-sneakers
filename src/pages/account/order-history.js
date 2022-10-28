@@ -32,11 +32,11 @@ const OrderHistory = () => {
       <SearchEngineOptimization title="Order History" />
       <div className="bg-white shadow rounded-lg p-8">
         <div className="mb-6">
-          <h1 className="text-xl">Order History</h1>
+          <h1 className="text-xl">Récapitulatif de commande</h1>
           <p className="text-sm font-light lg:w-2/3 leading-5">
-            View the status of recent orders, and manage returns. It is not
-            possible to return an order before it has been processed, if you
-            wish to cancel your order then please contact us.
+            Consultez l'état des commandes récentes et gérez les retours. Ce n'est pas
+            possible de retourner une commande avant qu'elle n'ait été traitée, si vous
+            souhaitez annuler votre commande, veuillez nous contacter.
           </p>
         </div>
         <div>

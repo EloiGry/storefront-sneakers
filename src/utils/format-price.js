@@ -8,8 +8,7 @@
  */
 export const formatPrice = (amount, currencyCode, quantity = 1) => {
   return (
-    parseFloat(((amount / 100) * quantity * 1).toFixed(2)) +
-    " " +
+    ((amount / 100) * quantity * 1).toFixed(2) +
     currencyCode.toUpperCase()
   )
 }

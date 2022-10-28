@@ -9,7 +9,7 @@ import { classNames } from "../../utils/class-names"
 const MobileMenu = ({ open, setOpen }) => {
   const pages = [
     {
-      name: "Create return",
+      name: "Retourner un article",
       path: "/create-return",
     },
     {
@@ -17,7 +17,7 @@ const MobileMenu = ({ open, setOpen }) => {
       path: "/faq",
     },
     {
-      name: "Terms & Conditions",
+      name: "Termes & Conditions",
       path: "/terms-and-conditions",
     },
   ]
@@ -73,7 +73,7 @@ const MobileMenu = ({ open, setOpen }) => {
                 className="-m-2 p-2 rounded-md inline-flex items-center justify-center text-gray-400"
                 onClick={() => setOpen(false)}
               >
-                <span className="sr-only">Close menu</span>
+                <span className="sr-only">Fermer le menu</span>
                 &times;
               </button>
             </div>
@@ -85,7 +85,7 @@ const MobileMenu = ({ open, setOpen }) => {
                   className="-m-2 p-2 block font-medium text-gray-900"
                   onClick={() => setOpen(false)}
                 >
-                  Products
+                  Baskets
                 </Link>
               </div>
               <div className="flow-root">
@@ -122,7 +122,7 @@ const MobileMenu = ({ open, setOpen }) => {
                       className="-m-2 p-2 block font-medium text-gray-900"
                       onClick={() => setOpen(false)}
                     >
-                      Account
+                      Mon Compte
                     </Link>
                   </div>
                   <div className="flow-root">
@@ -131,7 +131,7 @@ const MobileMenu = ({ open, setOpen }) => {
                       className="-m-2 p-2 block font-medium text-gray-900"
                       onClick={() => setOpen(false)}
                     >
-                      Order History
+                      Récapitulatif de mes commandes
                     </Link>
                   </div>
                 </Fragment>
@@ -143,7 +143,7 @@ const MobileMenu = ({ open, setOpen }) => {
                       className="-m-2 p-2 block font-medium text-gray-900"
                       onClick={() => setOpen(false)}
                     >
-                      Sign in
+                      Se connecter
                     </Link>
                   </div>
                   <div className="flow-root">
@@ -152,7 +152,7 @@ const MobileMenu = ({ open, setOpen }) => {
                       className="-m-2 p-2 block font-medium text-gray-900"
                       onClick={() => setOpen(false)}
                     >
-                      Create account
+                      Créer un compte
                     </Link>
                   </div>
                 </Fragment>

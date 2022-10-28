@@ -69,15 +69,15 @@ const CreateReturn = ({ location }) => {
       <SearchEngineOptimization title="Create Return" />
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between border-b border-ui-medium pb-8">
         <div>
-          <h1>Create Return</h1>
+          <h1>Renvoyer un article</h1>
           <p className="mt-2">
-            Use this form to create returns and exchange items
+            Utilisez ce formulaire pour créer des retours et échanger des articles
           </p>
         </div>
         <div className="flex flex-col mt-4 lg:mt-0 lg:flex-row lg:items-baseline lg:w-1/2">
           <SplitField>
             <Field
-              placeholder="Order number"
+              placeholder="Numéro de commande"
               formik={fetchOrderForm}
               name="display_id"
               defaultValue={fetchOrderForm.values.display_id}
@@ -98,7 +98,7 @@ const CreateReturn = ({ location }) => {
               fetchOrderForm.submitForm()
             }}
           >
-            Retrieve
+            Récupérer
           </button>
         </div>
       </div>
@@ -108,8 +108,8 @@ const CreateReturn = ({ location }) => {
             <div className="mt-8">
               <OrderBulletin order={order} cta={false} />
               <div className="mt-8">
-                <h3>Select items</h3>
-                <p>Select the items you wish to return</p>
+                <h3>Sélectionnez des éléments</h3>
+                <p>Sélectionnez les articles que vous souhaitez retourner</p>
                 <div
                   className={classNames(
                     returnItemsError ? "block" : "hidden",
@@ -137,10 +137,10 @@ const CreateReturn = ({ location }) => {
               </div>
               <Divider />
               <div>
-                <h3>Quantity</h3>
+                <h3>Quantité</h3>
                 <p>
-                  Select the quantity of each item you wish to return. You can
-                  only return up to the quantity you purchased.
+                  Sélectionnez la quantité de chaque article que vous souhaitez retourner. Tu peux
+                  ne retournez que jusqu'à la quantité que vous avez achetée
                 </p>
                 {selectedItems.map(item => {
                   return (
@@ -155,10 +155,10 @@ const CreateReturn = ({ location }) => {
               </div>
               <Divider />
               <div>
-                <h3>Exchanges</h3>
+                <h3>Échanges</h3>
                 <p className="mt-1">
-                  If you wish to exchange an item, select the quantity of the
-                  item aswell as the variant you wish to receive instead.
+                  Si vous souhaitez échanger un article, sélectionnez la quantité de
+                  article ainsi que la variante que vous souhaitez recevoir à la place.
                 </p>
                 {selectedItems.map(item => {
                   return (
@@ -179,9 +179,9 @@ const CreateReturn = ({ location }) => {
                 {returnOptions.length && (
                   <ShippingOptions
                     options={returnOptions}
-                    title="Return method"
+                    title="Méthodes de renvoie"
                     description={
-                      "We recommend purchasing a shipping label to ensure there is a tracking code and safe means for returning your product(s)."
+                      "Nous vous recommandons d'acheter une étiquette d'expédition pour vous assurer qu'il existe un code de suivi et un moyen sûr de retourner votre ou vos produits."
                     }
                     onSelect={setSelectedShipping}
                     defaultValue={selectedShipping}
@@ -216,11 +216,11 @@ const CreateReturn = ({ location }) => {
           {notReturnable ? (
             <ErrorMessage
               error={
-                "The selected order is not able to be returned. This can be because it has not been processed yet, or due to it already having been returned. If you wish to cancel your order or have any questions then don't hesitate to contact us"
+                "La commande sélectionnée ne peut pas être retournée. Cela peut être dû au fait qu'il n'a pas encore été traité ou qu'il a déjà été renvoyé. Si vous souhaitez annuler votre commande ou avez des questions, n'hésitez pas à nous contacter"
               }
             />
           ) : (
-            <p>Retrieve an order to create a return</p>
+            <p>Récupérer une commande pour créer un retour</p>
           )}
         </div>
       )}

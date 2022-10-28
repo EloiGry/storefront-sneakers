@@ -6,7 +6,7 @@ const ShippingOptions = ({
   options = [],
   title,
   description = null,
-  currencyCode = "eur",
+  currencyCode = "€",
   onSelect,
   defaultValue,
 }) => {

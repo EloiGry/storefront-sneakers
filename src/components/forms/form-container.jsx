@@ -15,7 +15,7 @@ const FormContainer = ({ title, description, handleSubmit, children }) => {
         </div>
         <div className="bg-ui-light flex items-center justify-end w-full px-8 py-4">
           <button className="btn-ui" type="submit">
-            Save
+            Enregistrer
           </button>
         </div>
       </form>

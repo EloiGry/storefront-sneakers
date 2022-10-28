@@ -13,9 +13,9 @@ const Collections = ({ data }) => {
     <div className="layout-base">
       <SearchEngineOptimization title="All Collections" />
       <div className="border-b border-ui-medium mb-8 pb-8">
-        <h1 className="mb-2">All Collections</h1>
+        <h1 className="mb-2">Nos Collections</h1>
         <p className="font-light text-sm">
-          Here you can browse all of our collections
+          Découvrir nos collections
         </p>
       </div>
       <Grid>

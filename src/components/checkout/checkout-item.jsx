@@ -15,7 +15,7 @@ const CheckoutItem = ({ item, currencyCode }) => {
             <p>Variant: {item.description}</p>
           </div>
           <div>
-            <p className="mb-2">Quantity: {item.quantity}</p>
+            <p className="mb-2">Quantité: {item.quantity}</p>
             <p className="font-medium">
               Total: {formatPrice(item.unit_price, currencyCode, item.quantity)}
             </p>

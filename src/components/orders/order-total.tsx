@@ -7,13 +7,13 @@ const OrderTotal = ({ order }) => {
   return (
     <div className="font-light text-sm">
       <div className="flex items-center justify-between mb-2">
-        <p>Subtotal</p>
+        <p>Sous total</p>
         <p className="font-medium">
           {formatPrice(order.subtotal, order.currency_code)}
         </p>
       </div>
       <div className="flex items-center justify-between mb-2">
-        <p>Shipping</p>
+        <p>Livraison</p>
         <p className="font-medium">
           {formatPrice(order.shipping_total, order.currency_code)}
         </p>
@@ -21,7 +21,7 @@ const OrderTotal = ({ order }) => {
       {appliedDiscount ? (
         <div className="flex items-center justify-between mb-2">
           <div className="inline-flex items-center">
-            <p>Discount</p>
+            <p>Remise</p>
             <span className="text-2xs py-1 px-3 rounded-2xl bg-ui-medium ml-2 font-medium">
               {appliedDiscount.code}
             </span>

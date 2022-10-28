@@ -7,7 +7,7 @@ const OrderConfirmed = ({ location }) => {
   const [order, setOrder] = useState(undefined)
   const [loading, setLoading] = useState(true)
   const [message, setMessage] = useState(
-    "Hang on, while we process your order."
+    "Patientez, pendant que nous traitons votre commande."
   )
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const OrderConfirmed = ({ location }) => {
     const onNoOrder = () => {
       if (!order && !loading) {
         setMessage(
-          "We couldn't find your order, it might have gone through but we can't seem to find it at the moment. Please check your email for an order confirmation."
+          "Nous n'avons pas pu trouver votre commande, elle a peut-être été expédiée, mais nous n'arrivons pas à la trouver pour le moment. Veuillez vérifier votre e-mail pour une confirmation de commande."
         )
       }
     }
@@ -42,12 +42,12 @@ const OrderConfirmed = ({ location }) => {
     <div className="layout-base flex justify-center pb-16">
       <SearchEngineOptimization title="Order Confirmed" />
       <div className="max-w-xl">
-        <span className="text-xs font-medium mb-2">THANK YOU</span>
-        <h1>Order Confirmed</h1>
+        <span className="text-xs font-medium mb-2">MERCI</span>
+        <h1>Commande validée</h1>
         <p className="text-md font-light mt-3">
-          Your order #{order.display_id} was successfully processed. You will
-          receive an email with the tracking number of your parcel once it’s
-          avaliable.
+          Votre commande #{order.display_id} a été traité avec succès. vous serez
+          recevez un e-mail avec le numéro de suivi de votre colis une fois celui-ci
+          disponible.
         </p>
         <div className="my-8">
           {order.items.map((item, index) => {

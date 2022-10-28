@@ -65,7 +65,7 @@ const CheckoutFlow = () => {
       handleSubmit: contactForm.handleSubmit,
     },
     {
-      title: "Address",
+      title: "Adresse",
       key: 1,
       completed: !_.isEmpty(cart?.shipping_address?.address_1),
       controller: shippingAddressForm,
@@ -73,7 +73,7 @@ const CheckoutFlow = () => {
       handleSubmit: shippingAddressForm.handleSubmit,
     },
     {
-      title: "Delivery Method",
+      title: "Méthode de livraison",
       key: 2,
       completed: !_.isEmpty(cart?.shipping_methods),
       controller: shippingOptionController,
@@ -87,7 +87,7 @@ const CheckoutFlow = () => {
       handleSubmit: shippingOptionController.handleSubmit,
     },
     {
-      title: "Payment",
+      title: "Paiement",
       key: 3,
       completed: false,
       children: <Payment />,
@@ -121,7 +121,7 @@ const CheckoutFlow = () => {
                       aria-hidden="true"
                       className="w-3 h-3 mr-2"
                     />
-                    <span>Go back</span>
+                    <span>Retour</span>
                   </button>
                 )}
                 <div />
@@ -132,7 +132,7 @@ const CheckoutFlow = () => {
                     onClick={step.handleSubmit}
                     disabled={step.controller.isSubmitting}
                   >
-                    Next
+                    Suivant
                   </button>
                 )}
               </div>

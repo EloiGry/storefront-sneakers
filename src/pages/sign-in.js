@@ -16,11 +16,11 @@ const SignIn = () => {
       <SearchEngineOptimization title="Sign In" />
       <div className="w-full lg:w-3/5">
         <div className="mb-6 flex-grow">
-          <h1 className="mb-1">Welcome back</h1>
+          <h1 className="mb-1">Hey !</h1>
           <p className="text-sm font-light">
-            Don't have an account?{" "}
+          Vous n'avez pas de compte ?{" "}
             <Link to="/sign-up" className="underline">
-              Sign up
+              Créer mon compte
             </Link>
           </p>
         </div>
@@ -45,7 +45,7 @@ const SignIn = () => {
             defaultValue={loginForm.values.email}
           />
           <Field
-            label="Password"
+            label="Mot de passe"
             type="password"
             autocomplete="old-password"
             name={"password"}
@@ -53,7 +53,7 @@ const SignIn = () => {
             defaultValue={loginForm.values.password}
           />
           <button className="btn-ui w-full mt-8" type="submit">
-            Sign in
+            Se connecter
           </button>
         </form>
       </div>

@@ -5,14 +5,14 @@ import Totals from "../checkout/totals"
 const CartReview = ({ cart }) => {
   return (
     <div className="bg-white rounded-md shadow px-8 py-6 w-full sticky top-28">
-      <h3 className="font-semibold mb-4">Order Summary</h3>
+      <h3 className="font-semibold mb-4">Récapitulatif de la commande</h3>
       <div className="mb-4">
         <Totals
           cart={cart}
         />
       </div>
       <Link to="/checkout">
-        <button className="btn-ui w-full">Checkout</button>
+        <button className="btn-ui w-full">Valider</button>
       </Link>
     </div>
   )

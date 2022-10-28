@@ -1,4 +1,4 @@
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import CollectionPreview from "../components/categories/collection-preview"
@@ -24,22 +24,21 @@ const IndexPage = ({ data }) => {
             className="w-full lg:w-1/2 h-auto"
           />
           <div>
-            <h1 className="text-4xl">CLAIM YOUR MERCH</h1>
+            <h1 className="text-4xl">BESOIN D'UNE NOUVELLE PAIRE ?</h1>
             <p className="mt-2 text-lg font-normal">
-              Contribute to Medusa and receive free merch
-              <br />
-              as a token of our appreciation
+              Viens découvrir tous nos différents modèles et collections !
             </p>
-            <button className="btn-ui mt-4 min-w-full lg:min-w-0">
-              Learn more
+            <Link to='/products'><button className="btn-ui mt-4 min-w-full lg:min-w-0">
+              Découvrir maintenant
             </button>
+            </Link>
           </div>
         </div>
       </div>
       <div className="layout-base my-12 min-h-0">
         <Grid
-          title={"Featured"}
-          cta={{ to: "/products", text: "Browse all products" }}
+          title={"Notre sélection du jour"}
+          cta={{ to: "/products", text: "Voir nos baskets" }}
         >
           {prods.slice(0, 4).map(p => {
             return <ProductListItem product={p} key={p.handle} />
@@ -47,8 +46,8 @@ const IndexPage = ({ data }) => {
         </Grid>
         <div className="mt-12">
           <Grid
-            title="Shop by collection"
-            cta={{ to: "/collections", text: "Browse all collections" }}
+            title="Nos Collections"
+            cta={{ to: "/collections", text: "Voir nos collections" }}
           >
             {collectionPreviews.slice(0, 4).map(collection => {
               return (

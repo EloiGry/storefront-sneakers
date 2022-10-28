@@ -27,7 +27,7 @@ const ShoppingBag = () => {
       <div className="flex relative flex-col-reverse lg:flex-row">
         <div className="flex flex-col lg:mr-12 lg:w-3/5">
           <div className="mb-8">
-            <h1 className="font-semibold">Shopping Bag</h1>
+            <h1 className="font-semibold">Panier</h1>
           </div>
           <div className="w-full">
             {cart.items.map(item => {
@@ -48,8 +48,8 @@ const ShoppingBag = () => {
       {related.length > 0 && (
         <div className="my-12">
           <Grid
-            title="You might also like"
-            cta={{ to: "/products", text: "Browse all products" }}
+            title="Vous pourriez aussi aimer"
+            cta={{ to: "/products", text: "Voir nos baskets" }}
           >
             {related.slice(0, 4).map(product => {
               return <ProductListItem key={product.handle} product={product} />

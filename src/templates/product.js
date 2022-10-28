@@ -1,6 +1,6 @@
 import { graphql, navigate } from "gatsby"
 import React, { useEffect } from "react"
-import ProductExpandable from "../components/products/product-expandable"
+// import ProductExpandable from "../components/products/product-expandable"
 import ProductImages from "../components/products/product-images"
 import ProductListItem from "../components/products/product-list-item"
 import ProductOptionSelector from "../components/products/product-option-selector"
@@ -11,13 +11,11 @@ import { useCart } from "../hooks/use-cart"
 import { useProduct } from "../hooks/use-product"
 import { useRegion } from "../hooks/use-region"
 import { formatPrice } from "../utils/format-price"
-import { pickDetails } from "../utils/pick-details"
 import { toKebab } from "../utils/to-kebab"
 
 const Product = ({ data, pageContext }) => {
   const { product, related } = data
   const { regionId, currencyCode, handle } = pageContext
-  const details = pickDetails(product)
   const {
     loading,
     actions: { addItem },
@@ -65,7 +63,7 @@ const Product = ({ data, pageContext }) => {
         <div className="mt-8 lg:mt-0 lg:w-2/5 lg:max-w-xl">
           <h1 className="font-semibold text-3xl">{product.title}</h1>
           <p className="text-lg mt-2 mb-4">
-            {formatPrice(price?.amount, currencyCode, 1)}
+            {formatPrice(price?.amount, '€', 1)}
           </p>
           <p className="font-light">{product.description}</p>
           {product.options.map((option, index) => {
@@ -85,7 +83,7 @@ const Product = ({ data, pageContext }) => {
               onClick={() => handleAddToCart()}
               disabled={loading}
             >
-              Add to bag
+              Ajouter au panier
             </button>
             <QuantitySelector
               quantity={quantity}
@@ -93,7 +91,7 @@ const Product = ({ data, pageContext }) => {
               decrement={decreaseQuantity}
             />
           </div>
-          <div className="mt-12">
+          {/* <div className="mt-12">
             {Object.keys(details).length > 0 && (
               <ProductExpandable title="Details">
                 <ul className="list-inside list-disc">
@@ -112,13 +110,13 @@ const Product = ({ data, pageContext }) => {
                 </ul>
               </ProductExpandable>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="my-12">
         <Grid
-          title="You might also like"
-          cta={{ to: "/products", text: "Browse all products" }}
+          title="Vous pourriez aussi aimer"
+          cta={{ to: "/products", text: "Voir nos baskets" }}
         >
           {related.edges
             .map(({ node }) => node)
@@ -138,7 +136,6 @@ export const query = graphql`
       id
       title
       description
-      weight
       options {
         id
         title

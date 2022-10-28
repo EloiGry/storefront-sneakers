@@ -26,7 +26,7 @@ const OrderHistoryItem = ({ item, currencyCode }) => {
                 <span>{item.description}</span>
               </span>
               <span>
-                <span className="text-ui-dark">Quantity: </span>
+                <span className="text-ui-dark">Quantité: </span>
                 <span>{item.quantity}</span>
               </span>
             </div>
@@ -39,7 +39,7 @@ const OrderHistoryItem = ({ item, currencyCode }) => {
         <div>
           <div className="flex items-center text-sm font-medium">
             <RegionalLink to={item.variant.product.handle}>
-              View Product
+              Voir les baskets
             </RegionalLink>
             <div className="bg-ui-dark h-4 w-px mx-4" />
             <button
@@ -51,7 +51,7 @@ const OrderHistoryItem = ({ item, currencyCode }) => {
                 })
               }
             >
-              Buy Again
+              Acheter de nouveau
             </button>
           </div>
         </div>

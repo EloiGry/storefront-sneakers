@@ -16,21 +16,21 @@ const AccountPopover = () => {
 
   const links = [
     {
-      label: "Account",
+      label: "Mon compte",
       to: "/account",
     },
     {
-      label: "Order history",
+      label: "Récapitulatif de commande",
       to: "/account/order-history",
     },
   ]
-
+  console.log(customerName, 'name');
   return (
     <Fragment>
       <Menu as="div" className="relative inline-block text-left">
         <div>
           <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-600">
-            {customer ? customerName : "Account"}
+            {customer ? customerName : "Mon compte"}
           </Menu.Button>
         </div>
 
@@ -71,7 +71,7 @@ const AccountPopover = () => {
                           "text-ui-dark block py-3 text-sm w-full text-left hover:text-black"
                         }
                       >
-                        Sign in
+                        Se connecter
                       </Link>
                     )}
                   </Menu.Item>
@@ -85,7 +85,7 @@ const AccountPopover = () => {
                           "text-ui-dark block py-3 text-sm w-full text-left hover:text-black"
                         }
                       >
-                        Create account
+                        Créer un compte
                       </Link>
                     )}
                   </Menu.Item>

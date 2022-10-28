@@ -100,7 +100,7 @@ const Header = () => {
                 className="bg-white p-2 lg:hidden"
                 onClick={() => setOpen(true)}
               >
-                <span className="sr-only">Open menu</span>
+                <span className="sr-only">Ouvrir le menu</span>
                 <svg
                   className="w-4 h-4 black"
                   viewBox="0 0 20 20"
@@ -119,8 +119,10 @@ const Header = () => {
 
             <div className="hidden lg:flex lg:items-center">
               <div className="hidden flex-grow items-center justify-center lg:flex text-sm font-medium">
-                <HeaderLink to="/products" text="Products" />
+                <HeaderLink to="/products" text="Baskets" />
                 <HeaderLink to="/collections" text="Collections" />
+                <HeaderLink to="/about" text="À propos"/>
+                <HeaderLink to="/contact" text="Contact"/>
               </div>
             </div>
           </div>

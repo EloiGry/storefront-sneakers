@@ -32,7 +32,7 @@ const Select = ({
           "rounded-md px-4 py-2 text-xs w-full border-transparent"
         )}
       >
-        <option value="">Select a country</option>
+        <option value="">Pays</option>
         {options.map((option, i) => {
           return (
             <option key={i} value={option.value}>

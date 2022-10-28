@@ -23,7 +23,7 @@ const CartPopover = () => {
           <div className="py-1">
             {cart.items < 1 ? (
               <div className="flex justify-center">
-                <p>Your cart is empty</p>
+                <p>Votre panier est vide</p>
               </div>
             ) : (
               <>
@@ -45,14 +45,14 @@ const CartPopover = () => {
                   <Menu.Item>
                     <Link to="/checkout">
                       <button className="btn-ui font-medium px-4 py-2 mb-2 text-sm w-full">
-                        Checkout
+                        Valider
                       </button>
                     </Link>
                   </Menu.Item>
                   <Menu.Item>
                     <Link to="/shopping-bag">
                       <button className="text-ui-dark py-2 text-sm w-full">
-                        View Shopping Bag
+                        Voir mon panier
                       </button>
                     </Link>
                   </Menu.Item>

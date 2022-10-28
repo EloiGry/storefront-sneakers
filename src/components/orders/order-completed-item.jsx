@@ -21,13 +21,13 @@ const OrderCompletedItem = ({ item, currencyCode }) => {
         <div className="text-sm text-ui-dark">
           <DividedContainer>
             <p>
-              Quantity{" "}
+              Quantité{" "}
               <span className="text-gray-700 font-semibold">
                 {item.quantity}
               </span>
             </p>
             <p>
-              Price{" "}
+              Prix{" "}
               <span className="text-gray-700 font-semibold">
                 {formatPrice(
                   item.unit_price,

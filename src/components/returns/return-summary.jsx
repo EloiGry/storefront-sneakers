@@ -40,9 +40,9 @@ const ReturnSummary = ({
   return (
     <div className="bg-white shadow p-8 rounded-lg sticky top-28">
       <div className="flex flex-col">
-        <h2 className="mb-3">Summary</h2>
+        <h2 className="mb-3">Récapitulatif</h2>
         <div className="flex items-center justify-between mb-2">
-          <p>Refund amount</p>
+          <p>Montant du remboursement</p>
           <p>
             {formatPrice(
               calculateReturnItemsTotal(selectedItems),
@@ -51,7 +51,7 @@ const ReturnSummary = ({
           </p>
         </div>
         <div className="flex items-center justify-between mb-2">
-          <p>Shipping</p>
+          <p>Livraison</p>
           <p>
             -{" "}
             {formatPrice(
@@ -61,7 +61,7 @@ const ReturnSummary = ({
           </p>
         </div>
         <div className="flex items-center justify-between">
-          <p>Additional items</p>
+          <p>Eléments supplémentaires</p>
           <p>
             -{" "}
             {formatPrice(
@@ -91,9 +91,9 @@ const ReturnSummary = ({
             onChange={() => setAccepted(!accepted)}
           />
           <span>
-            You agree with the{" "}
-            <Link to="terms-and-conditions">Terms &amp; Conditions</Link> and
-            our <Link to="/return-policy">Return Policy</Link>
+            Vous êtes d'accord avec{" "}
+            <Link to="terms-and-conditions">Termes &amp; Conditions</Link> and
+            our <Link to="/return-policy">politique de retour</Link>
           </span>
         </label>
         <button
@@ -101,7 +101,7 @@ const ReturnSummary = ({
           disabled={!accepted}
           onClick={async () => await completeReturn()}
         >
-          Confirm Return
+          Confirmer le renvoie
         </button>
         {error && (
           <div className="mt-2">

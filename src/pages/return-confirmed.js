@@ -54,16 +54,16 @@ const ReturnConfirmed = ({ location }) => {
     <div className="layout-base flex justify-center pb-16">
       <SearchEngineOptimization title="Return Confirmed" />
       <div className="max-w-xl">
-        <span className="text-xs font-medium mb-2">THANK YOU</span>
-        <h1>Return Confirmed</h1>
+        <span className="text-xs font-medium mb-2">MERCI</span>
+        <h1>Retour confirmé</h1>
         <p className="text-md font-light mt-3">
-          Your return was successful. If you purchased return shipping you will
-          receive an email with further instruction shortly. Once the return is
-          processed, your refund of{" "}
+        Votre retour a été un succès. Si vous avez acheté l'expédition de retour, vous
+          recevoir un e-mail avec des instructions supplémentaires sous peu. Une fois le retour effectué
+          traité, votre remboursement de{" "}
           <span className="font-semibold">
             {formatPrice(refundAmount, currencyCode)}
           </span>{" "}
-          will be released to your account.
+          sera versé sur votre compte.
         </p>
         <div className="my-8">
           {items.map((item, index) => {
@@ -74,7 +74,7 @@ const ReturnConfirmed = ({ location }) => {
     </div>
   ) : (
     <div>
-      <p>loading...</p>
+      <p>Un instant...</p>
     </div>
   )
 }

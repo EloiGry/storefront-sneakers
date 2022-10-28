@@ -7,6 +7,7 @@ export const useFilter = (products, activeFilters = null) => {
     if (activeFilters) {
       const filters = Object.keys(activeFilters)
 
+
       filtered = products.filter(product => {
         return filters.every(filter => {
           return product.options.find(option => {

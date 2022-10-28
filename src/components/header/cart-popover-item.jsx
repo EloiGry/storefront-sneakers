@@ -16,12 +16,12 @@ const CartPopoverItem = ({ item, currencyCode }) => {
         </div>
         <div className="flex items-center font-light text-xs">
           <p>
-            <span className="text-ui-dark">Quantity</span>{" "}
+            <span className="text-ui-dark">Quantité</span>{" "}
             <span>{item.quantity}</span>
           </p>
           <div className="w-px h-4 bg-ui-dark mx-3" />
           <p>
-            <span className="text-ui-dark">Price</span>{" "}
+            <span className="text-ui-dark">Prix</span>{" "}
             <span>
               {formatPrice(item.unit_price, currencyCode, item.quantity)}
             </span>

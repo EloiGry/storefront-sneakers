@@ -13,6 +13,7 @@ const Collection = ({ pageContext }) => {
   const { title, filterables, products } = pageContext
   const filteredProducts = useFilter(products, activeFilters)
 
+
   return (
     <Fragment>
       <SearchEngineOptimization title={title} />
@@ -25,9 +26,9 @@ const Collection = ({ pageContext }) => {
       />
       <div className="layout-base relative">
         <div className="w-full border-b border-ui-medium pb-6 mb-2 lg:mb-6 flex items-center justify-between">
-          <h1 className="font-semibold">{title}</h1>
+          <h1 className="font-semibold">Nos Baskets</h1>
           <button className="lg:hidden" onClick={() => setOpen(!open)}>
-            <span className="sr-only">Filter</span>
+            <span className="sr-only">Filtre</span>
             <img src={Funnel} alt="" className="w-4 h-4" />
           </button>
         </div>

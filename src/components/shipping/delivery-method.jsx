@@ -4,7 +4,7 @@ import { formatPrice } from "../../../utils/format-price"
 
 const DeliveryMethod = ({
   method,
-  currencyCode = "eur",
+  currencyCode = "€",
   isSelected,
   onSelect,
 }) => {

@@ -16,11 +16,11 @@ const SignUp = () => {
       <SearchEngineOptimization title="Sign Up" />
       <div className="w-3/5">
         <div className="mb-6 flex-grow">
-          <h1 className="mb-1">Create account</h1>
+          <h1 className="mb-1">Créer mon compte</h1>
           <p className="text-sm font-light">
-            Already have an account?{" "}
+          Vous avez déjà un compte?{" "}
             <Link to="/sign-in" className="underline">
-              Sign in
+              Se connecter
             </Link>
           </p>
         </div>
@@ -34,7 +34,7 @@ const SignUp = () => {
             <ErrorMessage error={registerForm.status.authError} />
           )}
           <Field
-            label="First name"
+            label="Prénom"
             className="mb-4"
             autocomplete="given-name"
             name={"first_name"}
@@ -42,7 +42,7 @@ const SignUp = () => {
             defaultValue={registerForm.values.first_name}
           />
           <Field
-            label="Last name"
+            label="Nom"
             className="mb-4"
             autocomplete="family-name"
             name={"last_name"}
@@ -58,7 +58,7 @@ const SignUp = () => {
             defaultValue={registerForm.values.email}
           />
           <Field
-            label="Phone (optional)"
+            label="Téléphone (optionnel)"
             autocomplete="tel"
             className="mb-4"
             name={"phone"}
@@ -66,7 +66,7 @@ const SignUp = () => {
             defaultValue={registerForm.values.phone}
           />
           <Field
-            label="Password"
+            label="Mot de passe"
             type="password"
             autocomplete="new-password"
             name={"password"}
@@ -74,7 +74,7 @@ const SignUp = () => {
             defaultValue={registerForm.values.password}
           />
           <button className="btn-ui w-full mt-8" type="submit">
-            Sign up
+            Créer mon compte
           </button>
         </form>
       </div>

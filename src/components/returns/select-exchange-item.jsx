@@ -74,7 +74,7 @@ const SelectExchangeItem = ({
             <div>
               <p>{item.title}</p>
               <p>
-                <span className="text-ui-dark">Price: </span>{" "}
+                <span className="text-ui-dark">Prix: </span>{" "}
                 {formatPrice(
                   selectedExchange?.amount ?? 0,
                   currencyCode,
@@ -115,18 +115,18 @@ const SelectExchangeItem = ({
         <div>
           {isAdded ? (
             <button className="ml-2 btn-ui" onClick={handleRemove}>
-              Remove
+              Retirer
             </button>
           ) : (
             <button className="ml-2 btn-ui" onClick={handleAdd}>
-              Add
+              Ajouter
             </button>
           )}
         </div>
       )}
     </div>
   ) : (
-    <p className="text-ui-dark">There is no exchanges for this product</p>
+    <p className="text-ui-dark">Il n'y a pas d'échange pour ce produit</p>
   )
 }
 

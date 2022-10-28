@@ -18,14 +18,14 @@ const CheckoutAddress = ({ controller }) => {
     <div className="mt-3 mb-6">
       <SplitField>
         <Field
-          label="First name"
+          label="Prénom"
           autocomplete="given_name"
           name="first_name"
           formik={controller}
           defaultValue={controller.values.first_name}
         />
         <Field
-          label="Last name"
+          label="Nom"
           autocomplete="family-name"
           name="last_name"
           formik={controller}
@@ -33,7 +33,7 @@ const CheckoutAddress = ({ controller }) => {
         />
       </SplitField>
       <Field
-        label="Company"
+        label="Entreprise"
         className="mt-4"
         autocomplete="organization"
         name="company"
@@ -41,7 +41,7 @@ const CheckoutAddress = ({ controller }) => {
         defaultValue={controller.values.company}
       />
       <Field
-        label="Address"
+        label="Adresse"
         className="mt-4"
         autocomplete="address-line1"
         name="address_1"
@@ -49,7 +49,7 @@ const CheckoutAddress = ({ controller }) => {
         defaultValue={controller.values.address_1}
       />
       <Field
-        label="Apartment, suite, etc."
+        label="Numéro d'ppartement, précision.."
         className="mt-4"
         autocomplete="address-line2"
         name="address_2"
@@ -58,7 +58,7 @@ const CheckoutAddress = ({ controller }) => {
       />
       <SplitField>
         <Select
-          label="Country"
+          label="Pays"
           autocomplete="country-code"
           name="country_code"
           formik={controller}
@@ -69,7 +69,7 @@ const CheckoutAddress = ({ controller }) => {
           }))}
         />
         <Field
-          label="City"
+          label="Ville"
           autocomplete="city-code"
           name="city"
           formik={controller}
@@ -78,14 +78,14 @@ const CheckoutAddress = ({ controller }) => {
       </SplitField>
       <SplitField>
         <Field
-          label="State / Province"
+          label="Département"
           autocomplete="address-level1"
           name="province"
           formik={controller}
           defaultValue={controller.values.province}
         />
         <Field
-          label="ZIP / Postal Code"
+          label="Code Postal"
           autocomplete="postal-code"
           name="postal_code"
           formik={controller}
@@ -93,7 +93,7 @@ const CheckoutAddress = ({ controller }) => {
         />
       </SplitField>
       <Field
-        label="Phone"
+        label="Téléphone"
         className="mt-4"
         autocomplete="tel"
         name="phone"

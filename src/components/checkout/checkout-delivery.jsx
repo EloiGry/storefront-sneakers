@@ -9,7 +9,7 @@ const CheckoutDelivery = ({ controller, options, currencyCode = "eur" }) => {
         <div className="bg-gray-400 text-white w-4 h-4 rounded-lg text-center mr-2">
         !
       </div>
-      <p>Taxes may apply, and will be added upon continuation to the next step.</p>
+      <p>Des taxes peuvent s'appliquer et seront ajoutées lors du passage à l'étape suivante.</p>
       </div>
       <ShippingOptions
         defaultValue={selectedShippingMethod}

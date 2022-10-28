@@ -22,9 +22,9 @@ const Account = () => {
       phone: customer?.phone || "",
     },
     validationSchema: Yup.object({
-      first_name: Yup.string().required("Required"),
-      last_name: Yup.string().required("Required"),
-      email: Yup.string().email("Invalid email").required("Required"),
+      first_name: Yup.string().required("Requis"),
+      last_name: Yup.string().required("Requis"),
+      email: Yup.string().email("Email invalide").required("Requis"),
       phone: Yup.string().optional(),
     }),
     onSubmit: async values => {
@@ -39,10 +39,10 @@ const Account = () => {
       passwordConfirmation: "",
     },
     validationSchema: Yup.object({
-      password: Yup.string().required("Password is required"),
+      password: Yup.string().required("Mot de passe est requis"),
       passwordConfirmation: Yup.string().oneOf(
         [Yup.ref("password"), null],
-        "Passwords must match"
+        "Les mots de passe doivent être les mêmes"
       ),
     }),
     onSubmit: async (values, { setStatus }) => {
@@ -60,16 +60,16 @@ const Account = () => {
 
   return (
     <AccountLayout>
-      <SearchEngineOptimization title="Account" />
+      <SearchEngineOptimization title="Mon Compte" />
       <div>
         <FormContainer
           title="Contact"
-          description="We need this information in case we need to contact you."
+          description="Nous avons besoin de ces informations au cas où nous aurions besoin de vous contacter."
           handleSubmit={contactForm.handleSubmit}
         >
           <div className="flex items-center mb-4">
             <Field
-              label="First name"
+              label="Prénom"
               autocomplete="given-name"
               name="first_name"
               formik={contactForm}
@@ -77,7 +77,7 @@ const Account = () => {
             />
             <div className="mx-2" />
             <Field
-              label="Last name"
+              label="Nom"
               autocomplete="family-name"
               name="last_name"
               formik={contactForm}
@@ -94,7 +94,7 @@ const Account = () => {
             />
             <div className="mx-2" />
             <Field
-              label="Phone (optional)"
+              label="Téléphone (optionnel)"
               autocomplete="tel"
               name="phone"
               formik={contactForm}
@@ -105,13 +105,13 @@ const Account = () => {
       </div>
       <div className="mt-16">
         <FormContainer
-          title="Password"
-          description="You can use this form to reset your password."
+          title="Mot de passe"
+          description="Vous pouvez utiliser ce formulaire pour réinitialiser votre mot de passe."
           handleSubmit={passwordForm.handleSubmit}
         >
           <div className="flex items-center">
             <Field
-              label="New Password"
+              label="Nouveau mot de passe"
               type="password"
               autocomplete="new-password"
               name="password"
@@ -120,7 +120,7 @@ const Account = () => {
             />
             <div className="mx-2" />
             <Field
-              label="Confirm Password"
+              label="Confirmer mot de passe"
               type="password"
               autocomplete="new-password"
               name="passwordConfirmation"

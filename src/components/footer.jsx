@@ -19,7 +19,7 @@ const Footer = () => {
 
   const internals = [
     {
-      name: "Create return",
+      name: "Retourner un article",
       to: "/create-return",
     },
     {
@@ -27,7 +27,7 @@ const Footer = () => {
       to: "/faq",
     },
     {
-      name: "Terms & Conditions",
+      name: "Termes & Conditions",
       to: "/terms-and-conditions",
     },
   ]

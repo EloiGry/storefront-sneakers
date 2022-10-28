@@ -18,7 +18,7 @@ const ReturnCompletedItem = ({ item }) => {
         </div>
         <div className="text-sm text-ui-dark">
           <p>
-            Quantity{" "}
+            Quantité{" "}
             <span className="text-gray-700 font-semibold">{item.quantity}</span>
           </p>
         </div>

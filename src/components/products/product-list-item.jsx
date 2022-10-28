@@ -31,7 +31,7 @@ const ProductListItem = ({ product }) => {
             <p className="font-normal">{product.title}</p>
           </h3>
           <p className="text-sm font-semibold text-gray-900">
-            from {fromPrice}
+          À partir de {fromPrice}
           </p>
         </div>
       </div>

@@ -30,7 +30,7 @@ const ProductFilter = ({ filterables, activeFilters, setActiveFilters }) => {
           <div key={index} className="py-4">
             <p className="font-medium mb-2">{filterable.title}</p>
             <div>
-              {filterable.values.map((value, index) => {
+              {filterable.values.sort().map((value, index) => {
                 return (
                   <label
                     key={index}

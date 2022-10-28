@@ -158,16 +158,16 @@ const Swap = ({ location }) => {
     <div className="layout-base flex justify-center pb-16">
       <SearchEngineOptimization title="Complete Exchange" />
       <div className="max-w-xl">
-        <span className="text-xs font-medium mb-2">ALMOST THERE</span>
-        <h1>Difference Due</h1>
+        <span className="text-xs font-medium mb-2">ON Y EST PRESQUE</span>
+        <h1>Différence due</h1>
         <p className="text-md font-light mt-3">
-          The total of your additional items was greater then the total of the
-          items you are returning. To complete your exchange you must pay the
-          difference.
+          Le total de vos articles supplémentaires était supérieur au total des
+          articles que vous retournez. Pour compléter votre échange, vous devez payer le
+          différence.
         </p>
         <Divider />
         <div>
-          <h3 className="mb-2">Additional Items</h3>
+          <h3 className="mb-2">Éléments supplémentaires</h3>
           {swapItems.additionalItems.map((item, index) => {
             return (
               <SwapItem
@@ -181,7 +181,7 @@ const Swap = ({ location }) => {
         </div>
         <Divider />
         <div>
-          <h3 className="mb-2">Return Items</h3>
+          <h3 className="mb-2">Renvoyer éléments</h3>
           {swapItems.returnItems.map((item, index) => {
             return (
               <SwapItem
@@ -194,7 +194,7 @@ const Swap = ({ location }) => {
           })}
         </div>
         <Divider />
-        <h3>Select shipping for additiona items</h3>
+        <h3>Sélectionnez l'expédition pour les articles supplémentaires</h3>
         <ShippingOptions
           options={additionalShippingOptions}
           currencyCode={currencyCode}
@@ -206,7 +206,7 @@ const Swap = ({ location }) => {
           <div className="flex items-center justify-between">
             <p className="font-semibold">
               {swapItems.returnShipping.title}{" "}
-              <span className="font-light">(for return items)</span>
+              <span className="font-light">(pour les articles retournés)</span>
             </p>
             <p>
               {formatPrice(
@@ -222,7 +222,7 @@ const Swap = ({ location }) => {
           <div className="flex items-center justify-between mt-2">
             <p className="font-semibold">
               {seletedShippingOption.name}{" "}
-              <span className="font-light">(for exchange items)</span>
+              <span className="font-light">(pour les articles échangés)</span>
             </p>
             <p>
               {formatPrice(
@@ -236,7 +236,7 @@ const Swap = ({ location }) => {
         )}
         <Divider />
         <div className="flex items-center justify-between mt-2">
-          <p className="font-semibold">Amount Due</p>
+          <p className="font-semibold">Montant dû</p>
           <p>{amountDue}</p>
         </div>
         <div>
@@ -247,7 +247,7 @@ const Swap = ({ location }) => {
           )}
           <ErrorMessage
             error={
-              "This is for testing purposes only, and should not be used in a production environment."
+              "Ceci est uniquement à des fins de test."
             }
           />
           <button
@@ -255,14 +255,14 @@ const Swap = ({ location }) => {
             onClick={handlePayment}
             disabled={isSubmitting}
           >
-            Pay
+            Payer
           </button>
         </div>
       </div>
     </div>
   ) : (
     <div>
-      <p>loading...</p>
+      <p>Un instant...</p>
     </div>
   )
 }

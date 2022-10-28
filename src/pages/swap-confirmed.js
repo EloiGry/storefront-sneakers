@@ -23,11 +23,11 @@ const OrderConfirmed = ({ location }) => {
     <div className="layout-base flex justify-center pb-16">
       <SearchEngineOptimization title="Order Confirmed" />
       <div className="max-w-xl">
-        <span className="text-xs font-medium mb-2">THANK YOU</span>
-        <h1>Exchange Completed</h1>
+        <span className="text-xs font-medium mb-2">MERCI</span>
+        <h1>Échange terminé</h1>
         <p className="text-md font-light mt-3">
-          Your exchange was successfully processed. You will receive an email
-          with the tracking number of your parcel once it’s avaliable.
+          Votre échange a été traité avec succès. Vous recevrez un e-mail
+          avec le numéro de suivi de votre colis une fois disponible.
         </p>
       </div>
     </div>

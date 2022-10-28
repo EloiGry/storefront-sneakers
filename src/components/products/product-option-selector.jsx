@@ -6,7 +6,7 @@ const ProductOptionSelector = ({ option, current, updateOption }) => {
   const filteredOptions = option.values.map(v => v.value).filter(onlyUnique)
   return (
     <div className="text-sm">
-      <p className="font-medium mb-2">Select {option.title}</p>
+      <p className="font-medium mb-2">{option.title}</p>
       <div>
         {filteredOptions.map((v, index) => {
           return (

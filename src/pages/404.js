@@ -8,7 +8,7 @@ const NotFoundPage = () => (
     <div className="h-full w-full flex flex-col justify-center items-center mt-8">
       <h1 className="text-3xl">404: NOT FOUND</h1>
       <p className="mt-2">
-        Vous venez d'emprunter un itinéraire qui n'existe pas... la tristesse 😢
+        Vous venez d'emprunter un itinéraire qui n'existe pas... 😢
       </p>
       <Link to="/" className="mt-4 btn-ui">
         Page d'accueil

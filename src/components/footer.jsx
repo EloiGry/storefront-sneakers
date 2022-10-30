@@ -5,15 +5,15 @@ const Footer = () => {
   const socials = [
     {
       name: "GitHub",
-      url: "https://www.github.com/medusajs",
+      url: "https://www.github.com/",
     },
     {
       name: "Twitter",
-      url: "https://www.twitter.com/medusajs",
+      url: "https://www.twitter.com/",
     },
     {
       name: "Discord",
-      url: "https://discord.gg/ruGn9fmv9q",
+      url: "https://discord.gg/",
     },
   ]
 
@@ -21,10 +21,6 @@ const Footer = () => {
     {
       name: "Retourner un article",
       to: "/create-return",
-    },
-    {
-      name: "FAQ",
-      to: "/faq",
     },
     {
       name: "Termes & Conditions",

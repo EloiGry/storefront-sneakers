@@ -32,7 +32,7 @@ const Contact = () => {
                         placeholder="Nom"
                         className="mt-1 mb-2 w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
                     />
-                    <label htmlFor="Email" class="block text-xs font-medium text-gray-700">
+                    <label htmlFor="Email" className="block text-xs font-medium text-gray-700">
                         Email
                     </label>
                     <input

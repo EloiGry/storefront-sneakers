@@ -23,6 +23,10 @@ const Footer = () => {
       to: "/create-return",
     },
     {
+      name: "FAQ",
+      to: "/faq",
+    },
+    {
       name: "Termes & Conditions",
       to: "/terms-and-conditions",
     },

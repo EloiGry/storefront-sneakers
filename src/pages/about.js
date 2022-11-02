@@ -69,8 +69,8 @@ return (
       Ce qu'on pense de nous
     </h3>
 
-    <Swiper className="mt-12" loop={false} spaceBetween={32} centeredSlides={true} breakpoints={{640: {width: 640, slidesPerView: 1,},768: {width: 768,slidesPerView: 2}, 1024: {width: 1024,slidesPerView: 3}}}>   
-        <SwiperSlide>
+    <Swiper className="mt-12 flex " spaceBetween={32} centeredSlides={true} breakpoints={{640: {width: 640, slidesPerView: 1,},768: {width: 768,slidesPerView: 2}, 1024: {width: 1024,slidesPerView: 3}}}>   
+        <SwiperSlide className="m-2">
           <blockquote className="rounded-lg bg-gray-100 p-8">
             <div className="flex items-center">
               <StaticImage

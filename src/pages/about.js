@@ -7,7 +7,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const About = () => {
 return (
   <div className="layout-base">
-  <SearchEngineOptimization title="A propos" />
+  <SearchEngineOptimization title="À propos" />
       <div className="border-b border-ui-medium mb-8 pb-8">
         <h1 className="mb-2">À propos</h1>
       </div>
@@ -69,8 +69,8 @@ return (
       Ce qu'on pense de nous
     </h3>
 
-    <Swiper className="mt-12 flex " spaceBetween={32} breakpoints={{640: {width: 640, slidesPerView: 1,},768: {width: 768,slidesPerView: 2}, 1024: {width: 1024,slidesPerView: 3}}}>   
-        <SwiperSlide className="m-2">
+    <Swiper className="mt-12" loop={true} spaceBetween={32} centeredSlides={true} breakpoints={{640: {width: 640, slidesPerView: 1,},768: {width: 768,slidesPerView: 2}, 1024: {width: 1024,slidesPerView: 3}}}>   
+        <SwiperSlide>
           <blockquote className="rounded-lg bg-gray-100 p-8">
             <div className="flex items-center">
               <StaticImage
@@ -144,7 +144,7 @@ return (
           </blockquote>
         </SwiperSlide>
 
-        <SwiperSlide className="m-2">
+        <SwiperSlide>
           <blockquote className="rounded-lg bg-gray-100 p-8">
             <div className="flex items-center">
               <StaticImage
@@ -217,7 +217,7 @@ return (
             </p>
           </blockquote>
         </SwiperSlide>
-        <SwiperSlide className="m-2">
+        <SwiperSlide>
           <blockquote className="rounded-lg bg-gray-100 p-8">
             <div className="flex items-center">
               <StaticImage
@@ -290,7 +290,7 @@ return (
             </p>
           </blockquote>
         </SwiperSlide>
-        <SwiperSlide className="m-2">
+        <SwiperSlide>
           <blockquote className="rounded-lg bg-gray-100 p-8">
             <div className="flex items-center">
               <StaticImage
@@ -363,7 +363,7 @@ return (
             </p>
           </blockquote>
         </SwiperSlide>
-        <SwiperSlide className="m-2">
+        <SwiperSlide>
           <blockquote className="rounded-lg bg-gray-100 p-8">
             <div className="flex items-center">
               <StaticImage

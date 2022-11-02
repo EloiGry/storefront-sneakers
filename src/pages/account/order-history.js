@@ -29,7 +29,7 @@ const OrderHistory = () => {
 
   return (
     <AccountLayout>
-      <SearchEngineOptimization title="Order History" />
+      <SearchEngineOptimization title="Commande" />
       <div className="bg-white shadow rounded-lg p-8">
         <div className="mb-6">
           <h1 className="text-xl">Récapitulatif de commande</h1>

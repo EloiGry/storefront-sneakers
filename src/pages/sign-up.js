@@ -13,7 +13,7 @@ const SignUp = () => {
 
   return (
     <AuthLayout>
-      <SearchEngineOptimization title="Sign Up" />
+      <SearchEngineOptimization title="Créer mon compte" />
       <div className="w-3/5">
         <div className="mb-6 flex-grow">
           <h1 className="mb-1">Créer mon compte</h1>

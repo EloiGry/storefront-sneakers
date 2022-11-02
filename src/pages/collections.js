@@ -11,7 +11,7 @@ const Collections = ({ data }) => {
 
   return (
     <div className="layout-base">
-      <SearchEngineOptimization title="All Collections" />
+      <SearchEngineOptimization title="Collections" />
       <div className="border-b border-ui-medium mb-8 pb-8">
         <h1 className="mb-2">Nos Collections</h1>
         <p className="font-light text-sm">

@@ -52,7 +52,7 @@ const ReturnConfirmed = ({ location }) => {
 
   return !loading && confirmedReturn ? (
     <div className="layout-base flex justify-center pb-16">
-      <SearchEngineOptimization title="Return Confirmed" />
+      <SearchEngineOptimization title="Retour confirmé" />
       <div className="max-w-xl">
         <span className="text-xs font-medium mb-2">MERCI</span>
         <h1>Retour confirmé</h1>

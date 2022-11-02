@@ -23,7 +23,7 @@ const ShoppingBag = () => {
 
   return (
     <div className="layout-base">
-      <SearchEngineOptimization title="Shopping Bag" />
+      <SearchEngineOptimization title="Panier" />
       <div className="flex relative flex-col-reverse lg:flex-row">
         <div className="flex flex-col lg:mr-12 lg:w-3/5">
           <div className="mb-8">

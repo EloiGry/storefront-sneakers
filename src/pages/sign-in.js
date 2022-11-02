@@ -13,7 +13,7 @@ const SignIn = () => {
 
   return (
     <AuthLayout>
-      <SearchEngineOptimization title="Sign In" />
+      <SearchEngineOptimization title="Se connecter" />
       <div className="w-full lg:w-3/5">
         <div className="mb-6 flex-grow">
           <h1 className="mb-1">Hey !</h1>

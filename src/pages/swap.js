@@ -156,7 +156,7 @@ const Swap = ({ location }) => {
 
   return !loading && swap ? (
     <div className="layout-base flex justify-center pb-16">
-      <SearchEngineOptimization title="Complete Exchange" />
+      <SearchEngineOptimization title="Echange" />
       <div className="max-w-xl">
         <span className="text-xs font-medium mb-2">ON Y EST PRESQUE</span>
         <h1>Différence due</h1>

@@ -66,7 +66,7 @@ const CreateReturn = ({ location }) => {
 
   return (
     <div className="layout-base">
-      <SearchEngineOptimization title="Create Return" />
+      <SearchEngineOptimization title="Retour" />
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between border-b border-ui-medium pb-8">
         <div>
           <h1>Renvoyer un article</h1>
